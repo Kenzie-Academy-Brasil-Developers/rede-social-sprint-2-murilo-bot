@@ -16,36 +16,149 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 
 /* VARIÁVEIS */
 :root{
-  
+  --font: Helvetica, Arial, sans-serif;
+  --color: #262626;
 }
 
 /*BODY*/
 body{
-
+	width: 1024px;
+	margin: 0 auto;
+	font-family: var(--font);
 }
 
 /*TOPO*/
-header{
+header{	
+	width: 100%;
+	margin-bottom: 50px;	
+}
+
+main .profile-content{
+	width: 100%;	
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+article .profile-info{	
+	width: 700px;
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
 	
+}
+.profile-info h1{
+	font-size: 30px;
+	margin-bottom: 20px;
+}
+
+.profile-info h2{
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.profile-info ul li a{		
+	text-decoration: none;
+	color: black;
+	cursor: pointer;
+}
+
+section .profile-data{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin-top: 30px;	
+}
+
+.profile-data p{
+	padding-right: 30px;
+}
+.numerosSpan{
+	padding-left: 0px;
+	font-weight: bold;
+}
+
+.profile-photo figure img{
+	width: 150px;
+	height: 150px;
+	margin-left: 50px;
+	border-radius: 100px;
+}
+
+main .highlighted-stories{	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	
+}
+
+.highlighted-stories ul li figure img{
+	width: 77px;
+	height: 77px;
+	border-radius: 100px;
+	margin: 10px 50px 10px 60px;
+	cursor: pointer;
+}
+.highlighted-stories ul li figure img:hover{
+	border: 1px solid white;
+}
+
+figcaption{
+	visibility: hidden;
+}
+
+li a figure img{
+	width: 293px;
+	height: 293px;
+}
+
+article ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;	
+	flex-wrap: wrap;		
+}
+
+main .profile-posts{	
+	padding-bottom: 25px;	
+}
+
+.profile-posts nav{
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	border-top: 2px solid rgb(199, 189, 189);
+}
+
+.profile-posts nav a{
+	text-decoration: none;	
+	padding-left: 10px;	
+	color: gray;
+}
+
+.profile-posts nav a:hover{
+	padding-top: 30px;
+	border-top: 2px solid gray ;
 }
 
 /*RODAPÉ*/
-footer{
+footer{	
+	text-align: center;
+}	
 
+footer nav a{
+	text-decoration: none;
+	color:gray;
+	padding-bottom: 5px;
+	padding-left: 15px;	
 }
 
-/*PÁGINA INICIAL*/
-main{
-	
+footer nav a:hover{
+	border-bottom: 1px solid gray;
 }
-	main .profile-content{
 
-	}
-
-	main .highlighted-stories{
-
-	}
-
-	main .profile-posts{
-
-	}
+footer div p{
+	margin: 20px 0 10px 0;
+	font-size: 15px;
+}	
